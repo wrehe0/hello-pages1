@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Игры</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NOVA<span>.</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="services.html" class="nav-link">Услуги</a>
+        <a href="portfolio.html" class="nav-link">Портфолио</a>
+        <a href="games.html" class="nav-link active">Игры</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1 class="page-title fade-up">Мини-<span class="accent">игры</span></h1>
+        <p class="page-subtitle fade-up">Разомнитесь между делами. Три классические игры прямо в браузере.</p>
+      </div>
+    </section>
+
+    <!-- Игра 1: Угадай число -->
+    <section class="section">
+      <div class="container">
+        <div class="game-card fade-up">
+          <div class="game-header">
+            <h2>🎯 Угадай число</h2>
+            <p>Компьютер загадал число от 1 до 100. Угадайте его за минимальное количество попыток.</p>
+          </div>
+          <div class="game-body" id="guessGame">
+            <div class="game-input-row">
+              <input type="number" id="guessInput" min="1" max="100" placeholder="Ваше число..." class="game-input">
+              <button class="btn" id="guessBtn">Проверить</button>
+            </div>
+            <p class="game-message" id="guessMessage">Введите число и нажмите «Проверить»</p>
+            <p class="game-stats">Попыток: <span id="guessAttempts">0</span></p>
+            <button class="btn btn-ghost" id="guessReset">Начать заново</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Игра 2: Камень-Ножницы-Бумага -->
+    <section class="section">
+      <div class="container">
+        <div class="game-card fade-up">
+          <div class="game-header">
+            <h2>✊ Камень, ножницы, бумага</h2>
+            <p>Сыграйте против компьютера. Первый до 5 побед!</p>
+          </div>
+          <div class="game-body" id="rpsGame">
+            <div class="rps-choices">
+              <button class="rps-btn" data-choice="rock">✊ Камень</button>
+              <button class="rps-btn" data-choice="scissors">✌️ Ножницы</button>
+              <button class="rps-btn" data-choice="paper">✋ Бумага</button>
+            </div>
+            <div class="rps-result">
+              <div class="rps-side">
+                <span class="rps-label">Вы</span>
+                <span class="rps-icon" id="rpsPlayer">—</span>
+                <span class="rps-score" id="rpsPlayerScore">0</span>
+              </div>
+              <div class="rps-vs">VS</div>
+              <div class="rps-side">
+                <span class="rps-label">Компьютер</span>
+                <span class="rps-icon" id="rpsComputer">—</span>
+                <span class="rps-score" id="rpsComputerScore">0</span>
+              </div>
+            </div>
+            <p class="game-message" id="rpsMessage">Сделайте свой выбор!</p>
+            <button class="btn btn-ghost" id="rpsReset">Сбросить счёт</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Игра 3: Реакция -->
+    <section class="section">
+      <div class="container">
+        <div class="game-card fade-up">
+          <div class="game-header">
+            <h2>⚡ Тест реакции</h2>
+            <p>Нажмите на кнопку, как только она станет зелёной. Проверьте свою скорость!</p>
+          </div>
+          <div class="game-body" id="reactionGame">
+            <div class="reaction-area" id="reactionArea">
+              <p id="reactionText">Нажмите «Старт», чтобы начать</p>
+            </div>
+            <p class="game-message" id="reactionMessage"></p>
+            <p class="game-stats">Лучшее время: <span id="reactionBest">—</span></p>
+            <button class="btn" id="reactionStart">Старт</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 NOVA. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

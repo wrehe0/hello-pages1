@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA — Контакты</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">NOVA<span>.</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Главная</a>
+        <a href="about.html" class="nav-link">О нас</a>
+        <a href="services.html" class="nav-link">Услуги</a>
+        <a href="portfolio.html" class="nav-link">Портфолио</a>
+        <a href="games.html" class="nav-link">Игры</a>
+        <a href="contact.html" class="nav-link active">Контакты</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-header">
+      <div class="container">
+        <h1 class="page-title fade-up">Свяжитесь <span class="accent">с нами</span></h1>
+        <p class="page-subtitle fade-up">Ответим в течение 24 часов. Работаем по всему миру.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-up">
+            <h2>Контакты</h2>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@nova.studio</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Телефон</strong>
+                <p>+7 (999) 676-76-76</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Адрес</strong>
+                <p>Москва, ул. Неоновая, 42</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Режим работы</strong>
+                <p>Пн–Пт: 10:00 — 19:00</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form fade-up" id="contactForm">
+            <h2>Оставить заявку</h2>
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" required placeholder="Иван Иванов">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" rows="5" required placeholder="Расскажите о вашем проекте..."></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить</button>
+            <p class="form-success" id="formSuccess">✓ Спасибо! Мы свяжемся с вами скоро.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 NOVA. Все права защищены.</p>
+      <div class="footer-links">
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
