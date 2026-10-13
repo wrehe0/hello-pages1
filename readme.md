@@ -16,7 +16,21 @@
 </div>
 
 ---
-
+```
+📁 static-site
+├── 📁 .github
+│   └── 📁 workflows
+│       └── ⚙️ deploy.yml
+├── 📄 about.html
+├── 📄 contact.html
+├── 📄 games.html
+├── 📄 index.html
+├── 📄 portfolio.html
+├── 📄 README.md
+├── ⚡ script.js
+├── 📄 services.html
+└── 🎨 styles.css
+```
 ## 📖 О проекте
 
 > Этот проект — практическая демонстрация того, как создать современный статический сайт и **автоматически** публиковать его в интернете при каждом коммите.
